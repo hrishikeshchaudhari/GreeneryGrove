@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <title>login</title>
+</head>
+<style>
+    body{
+        /* background-color: #D4FAFC; */
+    }
+    .inp{
+        width: 94%;
+        height: 5%;
+        padding: 6px;
+        border-radius: 10px;
+    }
+    .login{
+        /* outline-color: #EAEAEA;
+        outline-width:thin ;
+        outline-style: inset; */
+        /* display: inline-block; */
+        padding: 1%;
+        /* padding-right: 0%; */
+        /* text-align: center; */
+        /* position: absolute; */
+        /* max-width: 360px; */
+        /* margin-left: 550px; */
+        /* margin-top:200px; */
+        margin: 100px auto 100px auto;
+        width: 370px;
+        height: 450px;
+    }
+    .login-btn
+    {
+        background-color: #00FFC6;
+        color: white;
+        /* text-align: center; */
+        width: 40%;
+        height: 30px;
+        outline: none;
+        border: none;
+        padding-top: px;
+        padding-bottom: px;
+    }
+    form a{
+        /* justify-content: end; */
+        text-decoration: none;
+        color: #00a5ec;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        float: right;
+    }
+    .moto{
+        background-image: url('img/banner1.jpg');
+    }
+    .navbar1{
+        background-color: #00FFC6;
+        color: white;
+    }
+   
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar1">
+        <!-- <div class="container"> -->
+            <img class="ms-4" src="img/6995985-removebg-preview.png" style="width: 20px;" alt="">
+            <a class="navbar-brand logo" style="color: white;">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
+            <ul class="navbar-nav px-3"> 
+                <li class="nav-item active px-2">
+                    <a class="nav-link" href="#" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item active px-2 ">
+                    <a class="nav-link" href="#" style="color: white;">Contact Us</a>
+                </li>
+                
+                
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="login.html" style="color: white;">Login</a>
+                </li>
+                
+                <!-- <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li> -->
+                
+            </ul>
+        </div>
+        <!-- </div> -->
+        </nav>
+        <!-- <div class="moto">
+            <h1 style="text-align: center; padding-top: 50px; color: white; padding-bottom: 50px;">Access your internship adventure.<br>Login now.</h1>
+        </div> -->
+    <section>
+
+        <div class="login">
+            <h3>Login To Your Account</h3>
+            <br>
+            <form action="/login" method="post">
+                <!-- <input class="check"  type="checkbox">
+                <label for="">As Student</label>
+                <br>
+                <input class="check"  type="checkbox">
+                <label  for="">As Mentor</label>
+                <br>
+                <input class="check"  type="checkbox">
+                <label  for="">As Clients</label> -->
+                 <!-- <input type="checkbox">
+                <label for="">As company</label> -->
+                <div>
+                    
+                    <br>    
+        
+                    <br>
+                    <!-- <label for="">Email Id:</label> -->
+                    <br>
+                    <input class="inp" type="text" name="user_name" placeholder="peterparker@gmail.com">
+                    <br>
+                    <!-- <label for="">Password:</label> -->
+                    <br>
+                    <input id="inpt" class="inp" type="password" name="password" placeholder="Must be at least 6-characters">
+                    <br>
+                    <input id="show_password"  type="checkbox">
+                    <label for="">Show Password</label>
+                    <!-- <br> -->
+                    <!-- <br> -->
+                    <a href="">Forgot Password?</a>
+                </div>
+                <!-- <br> -->
+                <br>
+                <div style="text-align: center; padding-left: 120px; ">
+
+                   <button type="submit" class="login-btn" ><a href="/login"></a> Login</button>
+                </div>
+				<br>
+                <p style="text-align: center;">OR</p>
+                <div style="text-align: center; ">
+
+                    <button type="submit" class="login-btn"><a href="/auth/google"></a>Google+</button>
+                </div>
+                <a id="signup" style="text-align: center;" href="/register">Sign Up?</a>
+            </form>
+        </div>
+    </section>
+
+
+    
+    
+</body>
+<script src="loginandregister.js"></script>
+</html>
+
+
